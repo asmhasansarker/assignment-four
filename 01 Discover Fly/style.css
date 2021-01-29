@@ -67,10 +67,15 @@ nav ul li a:hover, a.active{
 }
 .plus-minus-btn{
     color: #3352F2;
-    font-size: 30px;
-    padding: 2px;
-    margin-top: 10px;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 15px;
     word-spacing: 20px;
+    display: flex;
+    
+}
+.plus-minus-btn span{
+    margin: 10px;
 }
 .booking-form  .calculations{
     margin: 10px 0;
@@ -116,7 +121,34 @@ nav ul li a:hover, a.active{
     font-weight: 500;
     background-color:  #3352F2;
 }
+
 .amount{
     display: flex;
     justify-content: space-between;
+}
+
+#congratulation-area{
+    position: absolute;
+    top:40%;
+    left:35%;
+    width:400px;
+    height:250px;
+    background:rgba(255, 255, 255, 0.842);
+    text-align: center;
+    padding:40px;
+    line-height: 2;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    display: none;
+   
+
+
+}
+#congratulation-area p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.custom-gray{
+    opacity: 0.4;
 }
