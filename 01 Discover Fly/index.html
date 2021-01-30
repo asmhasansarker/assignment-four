@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <button id="bookBtn" class="btn-style">Book Now</button>
+            <button id="bookBtn" class="btn-style" onclick="popup()">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -111,7 +111,7 @@
 
         
     </main>
-    <div id="congratulation-area" class="container">
+    <!-- <div id="congratulation-area" class="container">
         <h2>Congratulation !</h2>
         <p id="success">
 
@@ -126,7 +126,24 @@
 
         </p>
 
+    </div> -->
+
+    <div class="popup" id="popup-1">
+        <div class="overlay">
+        </div>
+        <div class="content">
+            <div id="close" class="close-btn">OK</div>
+            <h2>Congratulation !</h2>
+            <p>You have successfully booked <span id="f">0</span> First Class Tickets and <span id="e">0</span> Economy Tickets.
+            <br>
+            Have a safe journey.
+            <br>
+            Thank you.
+            </p>
+        </div>
     </div>
+
+ 
 
 
 

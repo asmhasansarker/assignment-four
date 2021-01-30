@@ -13,6 +13,8 @@ firstClassPlus.addEventListener("click",function(){
     
 })
 
+
+
 firstClassMinus.addEventListener("click",function(){
     let fTicketAmount = document.querySelector("#firstClassTicket").value;
     let fTicketNumber = parseInt(fTicketAmount);
@@ -61,15 +63,36 @@ function total(){
 
 }
 
-bookBtn.addEventListener("click",function(){
+// bookBtn.addEventListener("click",function(){
+//     let fTicketNumber = parseInt(document.querySelector("#firstClassTicket").value);
+//     let eTicketNumber = parseInt(document.querySelector("#eTicket").value);
+//     document.querySelector("#f").innerText = fTicketNumber;
+//     document.querySelector("#e").innerText = eTicketNumber;
+//     let head = document.querySelector("#head");
+//     let main = document.querySelector("#main");
+//     head.classList.add = "custom-gray";
+//     main.classList.add = "custom-gray";
+//     let success = document.querySelector("#congratulation-area");
+//     success.style.display = "block";
+// })
+
+
+
+// ---------------------
+// Popup Function Area
+// ---------------------
+
+function popup(){
     let fTicketNumber = parseInt(document.querySelector("#firstClassTicket").value);
     let eTicketNumber = parseInt(document.querySelector("#eTicket").value);
     document.querySelector("#f").innerText = fTicketNumber;
     document.querySelector("#e").innerText = eTicketNumber;
-    let head = document.querySelector("#head");
-    let main = document.querySelector("#main");
-    head.classList.add = "custom-gray";
-    main.classList.add = "custom-gray";
-    let success = document.querySelector("#congratulation-area");
-    success.style.display = "block";
+    document.getElementById("popup-1").classList.add("active");
+}
+
+
+const close = document.querySelector("#close");
+close.addEventListener("click",function(){
+    document.getElementById("popup-1").classList.remove("active");
 })
+
